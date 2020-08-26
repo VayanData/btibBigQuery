@@ -1,0 +1,9 @@
+/*
+ * Copyright 2020 btib, All Rights Reserved.
+ */
+/* Vendor Configuration File */
+group = 'btib'
+
+def moduleVersion = '0.0.1'
+def moduleVersionPatch = [:]
+version = "${moduleVersion}${moduleVersionPatch.get(project.name, '')}"

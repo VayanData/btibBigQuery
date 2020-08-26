@@ -1,0 +1,42 @@
+/* Module Build File */
+
+description = "a big query time series connector"
+ext {
+}
+niagaraModule {
+    moduleName = "btibBigQuery"
+    preferredSymbol = "bbq"
+    runtimeProfile = "rt"
+
+    modulePart {
+        name = "btibBigQuery-wb"
+        runtimeProfile = "wb"
+    }
+}
+
+jar {
+    from("src") {
+        include "resource/**/*"
+    }
+}
+
+dependencies {
+    // Niagara
+    compile "Tridium:nre:4.6"
+    compile "Tridium:baja:4.6"
+    compile "Tridium:alarm-rt:4.6"
+    compile "Tridium:control-rt:4.6"
+    // BTIB
+    compile "BTIB:btibCore-rt:46"
+    compile "BTIB:btibStructure-rt:46"
+    compile "BTIB:btibStrategy-rt:46"
+    compile "BTIB:btibDataFlow-rt:46"
+    compile "BTIB:btibConnector-rt:46"
+    // Big Query
+    uberjar "com.google.cloud:google-cloud-bigquery:1.116.10"
+}
+
+moduleTestJar {
+    from('srcTest') {
+    }
+}

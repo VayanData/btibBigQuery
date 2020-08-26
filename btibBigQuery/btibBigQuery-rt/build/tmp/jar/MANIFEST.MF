@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Version: 0.0.1
+Sealed: true
+Implementation-Vendor: btib
+

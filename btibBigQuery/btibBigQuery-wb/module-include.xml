@@ -1,0 +1,7 @@
+<types>
+  <!--com.btib.bigquery.ui.fieldeditor-->
+  <!---->
+  <type class="BBigQueryTSConnectorFE" name="BigQueryTSConnectorFE"/>
+  <!--fr.btib.bigquery.ui.fieldeditor-->
+  <type class="fr.btib.bigquery.ui.fieldeditor.BBigQueryTSConnectorFE" name="BigQueryTSConnectorFE"/>
+</types>

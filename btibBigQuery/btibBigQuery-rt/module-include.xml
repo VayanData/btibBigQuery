@@ -1,0 +1,9 @@
+<types>
+  <!--com.btib.bigquery-->
+  <!---->
+  <type class="BBigQueryExportBlock" name="BigQueryExportBlock"/>
+  <type class="BBigQueryTSConnector" name="BigQueryTSConnector"/>
+  <!--fr.btib.bigquery-->
+  <type class="fr.btib.bigquery.BBigQueryExportBlock" name="BigQueryExportBlock"/>
+  <type class="fr.btib.bigquery.BBigQueryTSConnector" name="BigQueryTSConnector"/>
+</types>

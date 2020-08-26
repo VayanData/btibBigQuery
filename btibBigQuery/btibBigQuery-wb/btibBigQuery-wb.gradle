@@ -1,0 +1,27 @@
+/* Module Build File */
+
+description = "a big query time series connector"
+ext {
+}
+niagaraModule {
+    moduleName = "bigquery"
+    preferredSymbol = "bbq"
+    runtimeProfile = "wb"
+}
+
+dependencies {
+    // Niagara
+    compile "Tridium:nre:4.6"
+    compile "Tridium:baja:4.6"
+    compile "Tridium:bajaui-wb:4.6"
+    compile "Tridium:workbench-wb:4.6"
+    // BTIB
+    compile project(":btibBigQuery-rt")
+    compile "BTIB:btibConnector-wb:46"
+    compile "BTIB:btibCore-wb:46"
+}
+
+moduleTestJar {
+    from('srcTest') {
+    }
+}
