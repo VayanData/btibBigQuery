@@ -117,8 +117,9 @@ public class BBigQueryTSConnector extends BTimeSeriesConnector
     ////////////////////////////////////////////////////////////////
 
     @Override
-    protected void export_(List<Map<String, Object>> data, Map<String, String> options) throws TimeSeriesConnectorException
+    protected void export_(List<Map<String, Object>> data, Map<String, Object> tags, Map<String, String> options) throws TimeSeriesConnectorException
     {
+        data.forEach(e -> e.putAll(tags));
         String dataset = options.get(DATASET);
         if (dataset == null || dataset.isEmpty())
         {

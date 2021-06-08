@@ -7,5 +7,5 @@
 // correct path to your desired Niagara install and its associated
 // user home
 gradle.ext.niagara_dev_home = "C:/Workspace/btibdev/niagara_dev/bigquery"
-gradle.ext.niagara_home = "C:/Niagara/Niagara-4.8.0.110"
+gradle.ext.niagara_home = "C:/Niagara/Niagara-4.9.0.198.dev"
 gradle.ext.niagara_user_home = "C:/Users/abelhaji/Niagara4.8/tridium"
